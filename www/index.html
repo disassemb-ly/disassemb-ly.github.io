@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dasha @ https://disassemb.ly</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+      div#bytes {
+        font-family: monospace;
+        white-space: pre;
+        min-height: 10em;
+        background: lightgrey;
+      }
+      div#bytes > div {
+        line-height: 100%;
+        min-height: 1em;
+      }
+      div#bytes span.cursor {
+        background: grey;
+        color: #fff;
+        min-width: 1rem;
+      }
+      div#asm {
+        margin: 2em 0;
+        font-family: monospace;
+      }
+      div#asm > div span {
+        display: inline-block;
+        /*background: rgba(255, 255, 0, 0.5);*/
+        padding: 0.1em 0.1em;
+      }
+      div#asm > div > span:hover {
+        color: #fff;
+        background: #f00;
+      }
+      div#asm > div > span > span:hover {
+        color: #000;
+        background: #0f0;
+      }
+      div#asm > div > span > span > span:hover {
+        color: #fff;
+        background: #00f;
+      }
+      div#asm > div {
+        margin: 1em 0;
+      }
+      .yellow {
+        background: #ff0;
+      }
+      .blue {
+        background: #00f;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <div id="bytes" tabindex="-1"></div>
+    <div id="asm"></div>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>

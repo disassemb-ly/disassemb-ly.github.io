@@ -1,0 +1,40 @@
+{
+  "name": "dasha-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "homepage": "https://disassemb.ly",
+  "bugs": {
+    "url": "https://github.com/disassemb-ly/dasha/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disassemb-ly/dasha"
+  },
+  "license": "(MIT OR Apache-2.0)",
+  "author": "William Tange <will@brt.sexy> (https://brt.sexy/)",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server",
+    "test": "mocha -r ts-node/register tests/**/*.test.ts",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
+  },
+  "dependencies": {
+    "dasha-web": "file:../pkg"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.16",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "copy-webpack-plugin": "^5.0.0",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "ts-loader": "^8.2.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
