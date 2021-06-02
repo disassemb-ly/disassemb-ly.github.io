@@ -16,7 +16,7 @@ default = ["console_error_panic_hook"]
 
 [dependencies]
 console_error_panic_hook = { version = "0.1.6", optional = true }
-dasha = { git = "https://github.com/disassemb-ly/dasha", features = ["serde"] }
+dasha = { git = "https://github.com/disassemb-ly/dasha", branch = "main", features = ["serde"] }
 js-sys = "0.3.50"
 serde = { version = "1.0", features = ["derive"] }
 wasm-bindgen = { version = "0.2", features = ["serde-serialize"] }
