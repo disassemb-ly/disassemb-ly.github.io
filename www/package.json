@@ -21,7 +21,8 @@
     "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
   },
   "dependencies": {
-    "dasha-web": "file:../pkg"
+    "dasha-web": "file:../pkg",
+    "ts-nano": "^0.3.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.16",
