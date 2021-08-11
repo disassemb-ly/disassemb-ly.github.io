@@ -25,7 +25,7 @@ import('dasha-web').then((dasha) => {
       if (typeof inst === 'string') {
         return document.createTextNode(inst);
       } else {
-        if (typeof inst.child === 'string') {
+        if (typeof inst.child === 'string' || typeof inst.child === 'number') {
           const span = document.createElement('span');
           span.textContent = inst.child;
           return span;
